@@ -8,12 +8,12 @@
     <%= javascript_include_tag 'application' %>
   </head>
 
-  <body>
+  <!-- <body>
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
       <a class="navbar-brand" href="/">
         <img src='7e548a5e-43d8-46d0-bde9-55b86fb22464.png' width="300" height="300" class="d-inline-block align-top" alt="">
       </a>
-    <div class="nav-item">
+    <div class="nav-item" role="navigation">
         <a class="nav-link" href="/categories">Categories</a>
     </div>
     <div class="nav-item">
@@ -27,14 +27,28 @@
         <% end %>
       </div>
     <div class="nav-item">
-      <p>Cart: <%= @cart.total_count %></p>
-    </div>
-    <div class="nav-item">
         <a class="nav-link" href="/cart"> <span class="glyphicon glyphicon-shopping-cart">Cart</span>
         </a>
     </div>
-  </nav>
+    <div class="nav-item">
+      <p>Cart: <%= @cart.total_count %></p>
+    </div>
+  </nav> -->
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Features</a>
+      <a class="nav-item nav-link" href="#">Pricing</a>
+      <a class="nav-item nav-link disabled" href="#">Disabled</a>
+    </div>
+  </div>
+</nav>
 
     <% flash.each do |type, message| %>
       <%= content_tag :div, sanitize(message), class: type %>

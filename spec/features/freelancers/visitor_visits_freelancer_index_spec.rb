@@ -6,6 +6,7 @@ describe "As a Visitor" do
       freelancer = create_list(:freelancer, 3)
 
       visit freelancers_path
+      save_and_open_page
 
       expect(page).to have_content(freelancer[0].name)
       expect(page).to have_content(freelancer[2].name)

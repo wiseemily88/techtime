@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(version: 20171104212810) do
     t.integer "zip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "role", default: 0
+    t.integer "role"
   end
 
   add_foreign_key "freelancers", "categories"
