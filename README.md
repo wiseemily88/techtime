@@ -1,6 +1,6 @@
 
 # TechTime
-This is a hand-rolled web application created by Emily Wise, Marshall Houston, and Lauren Billington as students at Turing School of Software and Design. TechTime is a Ruby on Rails application using Ruby 2.4.1, Rails 5 with Active Record, PostGreSQL database, Heroku platform, and AWS.
+This is a hand-rolled web application created as a group project Turing School of Software and Design. TechTime is a Ruby on Rails application using Ruby 2.4.1, Rails 5 with Active Record, PostGreSQL database, Heroku platform, and AWS.
 
 The implementation was based on user stories for Categories, Items, and Users.
 To see the project guidelines, please visit http://backend.turing.io/module2/projects/little_shop
